@@ -1,7 +1,9 @@
 # jsdatepicker
 A simple and easy to customise javascript datepicker.
 
-![jsdatepicker screenshot](https://cloud.githubusercontent.com/assets/10542894/6098126/5b1ea5d4-afd5-11e4-8665-53b481bab334.png)
+<a href="http://lucaslouca.github.io/jsdatepicker/">Demo</a>
+
+<img src="https://cloud.githubusercontent.com/assets/10542894/6098126/5b1ea5d4-afd5-11e4-8665-53b481bab334.png" width="450"/>
 
 ## How to use it:
 
