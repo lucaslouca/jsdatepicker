@@ -42,3 +42,8 @@ Initialise the calendar (e.g. with the current date):
 
 >A function to execute when a date is picked. The `element` is the day element clicked. `day`, `month` and `year` is the selected date. 
 
+
+
+> `getSelectedDate()`
+
+>Returns an array (`[day, month, year]`) representation of the current selected date. If no date is selected array value is `[-1, -1, -1]`.
