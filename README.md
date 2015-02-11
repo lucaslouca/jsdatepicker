@@ -15,7 +15,7 @@ Include the neccesary stylesheet and javascript files:
 
 Include a simple div to hold your datepicker:
 ```
-<div id="calendar" class="calendarBox"></div>
+<div id="myDatePicker" class="calendarBox"></div>
 ```
 
 Initialise the calendar (e.g. with the current date):
@@ -25,8 +25,8 @@ Initialise the calendar (e.g. with the current date):
 	var year = date.getFullYear();
 	var month = date.getMonth();
 	
-    var calendarFrom = new Calendar('calendar',month,year);
-    calendarFrom.onPickedDate(function(day,month,year) {
+    var datePicker = new JSDatePicker('myDatePicker',month,year);
+    datePicker.onPickedDate(function(day,month,year) {
 			console.log('Picked day '+day+'/'+month+'/'+year);
     });	
 </script>
