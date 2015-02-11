@@ -1,6 +1,6 @@
 'use strict';
 
-var Calendar = function(calendarId, month, year) {
+var JSDatePicker = function(calendarId, month, year) {
     var exports = {};
     var _onPickedDateCallback;
     var _calendar;
