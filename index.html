@@ -3,15 +3,15 @@
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
-        <script src='calendar.js'></script>
-        <link rel="stylesheet" type="text/css" href="calendar.css" media="screen" />
+        <script src='jsdatepicker.js'></script>
+        <link rel="stylesheet" type="text/css" href="jsdatepicker.css" media="screen" />
         <title>jsCalendar Example</title>
 	</head>
 	<body>
 
         <main id="container">
 			<section>
-		        <div id="calendar" class="calendarBox"></div>
+		        <div id="myDatePicker" class="jsDatePickerBox"></div>
 	    	</section>
         </main>
 
@@ -20,8 +20,8 @@
 			var year = date.getFullYear();
 			var month = date.getMonth();
 			
-		    var calendarFrom = new Calendar('calendar',month,year);
-		    calendarFrom.onPickedDate(function(day,month,year) {
+		    var datePicker = new JSDatePicker('myDatePicker',month,year);
+		    datePicker.onPickedDate(function(day,month,year) {
 					console.log('Picked day '+day+'/'+month+'/'+year);
 		    });	
 		</script>
