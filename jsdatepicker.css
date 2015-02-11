@@ -12,7 +12,7 @@
 	font-family: "HelveticaNeue-Light";
 }
 
-.calendarBox {
+.jsDatePickerBox {
     display: inline-block;
     border:1px #c2ebff solid;
     width:280px;
@@ -20,7 +20,7 @@
     border-radius: 3px;
 }
 
-.calendarBox .header {
+.jsDatePickerBox .header {
     width:100%;
     height:2em;
     display: table;
@@ -28,87 +28,87 @@
     line-height: 2em;
 }
 
-.calendarBox .headerCell {
+.jsDatePickerBox .headerCell {
     display:table-cell;
     color:#FFFFFF;
 }
 
-.calendarBox .headerCell.titleCell{
+.jsDatePickerBox .headerCell.titleCell{
     width:50%;
 }
 
-.calendarBox .headerCell.backCell, .calendarBox .headerCell.nextCell{
+.jsDatePickerBox .headerCell.backCell, .jsDatePickerBox .headerCell.nextCell{
     /* just to note that they exist to ;-) */
 }
 
 /* e.g. April, 2015 */
-.calendarBox .title {
+.jsDatePickerBox .title {
     background-color: #8cd5f7;
 }
 
-.calendarBox .back, .next{
+.jsDatePickerBox .back, .next{
     width:100%;
     background-color: #29bbff;
 }
 
-.calendarBox .back:hover, .calendarBox  .next:hover{
+.jsDatePickerBox .back:hover, .jsDatePickerBox  .next:hover{
     background-color: #12b3ff;
 }
 
-.calendarBox .back {
+.jsDatePickerBox .back {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.calendarBox .next{
+.jsDatePickerBox .next{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.calendarBox .back:after {
+.jsDatePickerBox .back:after {
     content:'◀';
 }
 
-.calendarBox .next:after {
+.jsDatePickerBox .next:after {
     content:'▶';
 }
 
-.calendarBox .back:hover, .calendarBox  .next:hover {
+.jsDatePickerBox .back:hover, .calendarBox  .next:hover {
     cursor: pointer;
 }
 
-.calendarBox .week {
+.jsDatePickerBox .week {
     
 }
 
-.calendarBox .weekDay {
+.jsDatePickerBox .weekDay {
     font-size: 0.8em;
     background-color: #f9f9f9;
     padding:5px;
     text-align: center;
 }
 
-.calendarBox .weekDayWrapper {
+.jsDatePickerBox .weekDayWrapper {
     padding:3px 3px 0 0;
     display: inline-block;
     width:calc(100%/7);
 }
 
-.calendarBox .weekDayWrapper:last-child {
+.jsDatePickerBox .weekDayWrapper:last-child {
     padding-right:0;
 }
 
-.calendarBox .dayWrapper {
+.jsDatePickerBox .dayWrapper {
     padding:3px 3px 0 0;
     display: inline-block;
     width:calc(100%/7);
 }
 
-.calendarBox .dayWrapper:nth-child(7n+2){
+.jsDatePickerBox .dayWrapper:nth-child(7n+2){
     padding-right:0;
 }
 
-.calendarBox .day {
+.jsDatePickerBox .day {
     display: inline-block;
     width:100%;
     height:2em;
@@ -122,27 +122,27 @@
 	transition:.1s ease-in-out;
 }
 
-.calendarBox .day.previousMonth, .calendarBox .day.nextMonth  {
+.jsDatePickerBox .day.previousMonth, .jsDatePickerBox .day.nextMonth  {
 	background-color: #e1e1e1;
 }
 
-.calendarBox .day.selected {
+.jsDatePickerBox .day.selected {
     background-color:#a1da1d;
 }
 
-.calendarBox .day.currentDay {
+.jsDatePickerBox .day.currentDay {
 	color:#ff8500;
 }
 
-.calendarBox .day.previousMonth.selected, .calendarBox .day.nextMonth.selected  {
+.jsDatePickerBox .day.previousMonth.selected, .jsDatePickerBox .day.nextMonth.selected  {
 	background-color: #d2ed91;
 }
 
-.calendarBox .day:hover {
+.jsDatePickerBox .day:hover {
     cursor: pointer;
     background-color:#b8d670;
 }
 
-.calendarBox .day.selected:hover {
+.jsDatePickerBox .day.selected:hover {
     background-color:#879b58;
 }
