@@ -18,7 +18,7 @@ Include a simple div to hold your datepicker:
 <div id="myDatePicker" class="calendarBox"></div>
 ```
 
-Initialise the calendar (e.g. with the current date):
+Initialise the date picker (e.g. with the current date):
 ```
 <script>
 	var date = new Date();
