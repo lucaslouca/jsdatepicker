@@ -73,7 +73,7 @@
     content:'▶';
 }
 
-.jsDatePickerBox .back:hover, .calendarBox  .next:hover {
+.jsDatePickerBox .back:hover, .jsDatePickerBox .next:hover {
     cursor: pointer;
 }
 
