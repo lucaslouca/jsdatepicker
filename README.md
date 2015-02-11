@@ -9,13 +9,13 @@ A simple and easy to customise javascript datepicker.
 
 Include the neccesary stylesheet and javascript files:
 ```
-<link rel="stylesheet" type="text/css" href="calendar.css" media="screen" />
-<script src='calendar.js'></script>
+<link rel="stylesheet" type="text/css" href="jsdatepicker.css" media="screen" />
+<script src='jsdatepicker.js'></script>
 ```
 
 Include a simple div to hold your datepicker:
 ```
-<div id="myDatePicker" class="calendarBox"></div>
+<div id="myDatePicker" class="jsDatePickerBox"></div>
 ```
 
 Initialise the date picker (e.g. with the current date):
