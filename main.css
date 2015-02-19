@@ -1,11 +1,6 @@
-@font-face {
-    font-family: HelveticaNeue-Light;
-    src: url(fonts/HelveticaNeue-Light.otf);
-}
-
 html {
 	height:100%;
-    font-family: "HelveticaNeue-Light";
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
 	font-size: 16px;
 	padding:0;
 }
