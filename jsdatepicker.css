@@ -9,7 +9,7 @@
 	-ms-box-sizing: padding-box;
 	box-sizing: padding-box;
 	
-	font-family: "HelveticaNeue-Light";
+	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 
 .jsDatePicker {
