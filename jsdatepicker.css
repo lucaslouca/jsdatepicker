@@ -66,11 +66,11 @@
 }
 
 .jsDatePicker .back:after {
-    content:'◀';
+    content:'<';
 }
 
 .jsDatePicker .next:after {
-    content:'▶';
+    content:'>';
 }
 
 .jsDatePicker .back:hover, .jsDatePicker .next:hover {
