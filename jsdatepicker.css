@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .js-date-picker * {
+=======
+.jsDatePicker * {
+>>>>>>> 41d1270f32988f2fe55395fc313b8ccdcee5422c
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -65,11 +69,19 @@
     border-bottom-right-radius: 5px;
 }
 
+<<<<<<< HEAD
 .js-date-picker .back:after {
     content:'<';
 }
 
 .js-date-picker .next:after {
+=======
+.jsDatePicker .back:after {
+    content:'<';
+}
+
+.jsDatePicker .next:after {
+>>>>>>> 41d1270f32988f2fe55395fc313b8ccdcee5422c
     content:'>';
 }
 
