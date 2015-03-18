@@ -37,7 +37,7 @@ var JSDatePicker = function(calendarId, month, year) {
         headerElement.className = "header";
         
         var backCellElement = document.createElement("div");
-        backCellElement.className = "headerCell backCell";
+        backCellElement.className = "header-cell back-cell";
         var backElement = document.createElement("div");
         backElement.className = "back";
         backElement.addEventListener("click",function() {
@@ -52,7 +52,7 @@ var JSDatePicker = function(calendarId, month, year) {
         headerElement.appendChild(backCellElement);
         
         var titleCellElement = document.createElement("div");
-        titleCellElement.className = "headerCell titleCell";
+        titleCellElement.className = "header-cell title-cell";
         
         var titleElement = document.createElement("div");
         titleElement.className = "title";
@@ -61,7 +61,7 @@ var JSDatePicker = function(calendarId, month, year) {
         headerElement.appendChild(titleCellElement);
         
         var nextCellElement = document.createElement("div");
-        nextCellElement.className = "headerCell nextCell";
+        nextCellElement.className = "header-cell next-cell";
         
         var nextElement = document.createElement("div");
         nextElement.className = "next";
@@ -92,10 +92,10 @@ var JSDatePicker = function(calendarId, month, year) {
         
         for (var i=0; i<_weekDays.length; i++) {
             var weekDayWrapperElement = document.createElement("div");
-            weekDayWrapperElement.className = "weekDayWrapper";
+            weekDayWrapperElement.className = "week-day-wrapper";
             
             var weekDayElement = document.createElement("div");
-            weekDayElement.className = "weekDay";
+            weekDayElement.className = "week-day";
             weekDayElement.appendChild(document.createTextNode(_weekDays[i]));
             
             weekDayWrapperElement.appendChild(weekDayElement);
@@ -147,10 +147,10 @@ var JSDatePicker = function(calendarId, month, year) {
         var daysPreviousMonth = 32 - new Date(previousYear, previousMonth, 32).getDate();
         for (var i=first-1; i>=0; i--) {
             var dayWrapperElement = document.createElement("div");
-            dayWrapperElement.className = "dayWrapper";
+            dayWrapperElement.className = "day-wrapper";
             
             var dayElement = document.createElement("div");
-            dayElement.className = "day previousMonth";
+            dayElement.className = "day previous-month";
 
             var day = daysPreviousMonth - i;
             dayElement.appendChild(document.createTextNode(day));
@@ -161,7 +161,7 @@ var JSDatePicker = function(calendarId, month, year) {
 	        }
         
 			if (day==_currentDate.getDate() && previousMonth == _currentDate.getMonth() && previousYear == _currentDate.getFullYear()) {
-		        dayElement.classList.add('currentDay');
+		        dayElement.classList.add('current-day');
 	        }
 	        
             dayElement.addEventListener("click",onclickWrapper(day,previousMonth,previousYear));           
@@ -173,7 +173,7 @@ var JSDatePicker = function(calendarId, month, year) {
         var daysCurrentMonth = 32 - new Date(year, month, 32).getDate();
         for (var day=1; day<=daysCurrentMonth; day++) {
             var dayWrapperElement = document.createElement("div");
-            dayWrapperElement.className = "dayWrapper";
+            dayWrapperElement.className = "day-wrapper";
             
             var dayElement = document.createElement("div");
             dayElement.className = "day";
@@ -184,7 +184,7 @@ var JSDatePicker = function(calendarId, month, year) {
         	}
         
 			if (day==_currentDate.getDate() && month == _currentDate.getMonth() && year == _currentDate.getFullYear()) {
-		        dayElement.classList.add('currentDay');
+		        dayElement.classList.add('current-day');
 	        }
 	        
             dayElement.addEventListener("click",onclickWrapper(day, month, year));
@@ -204,19 +204,19 @@ var JSDatePicker = function(calendarId, month, year) {
 		var rest = gridSize  - (daysCurrentMonth + Math.max(0,first));
         for (var day=1; day<=rest; day++) {
             var dayWrapperElement = document.createElement("div");
-            dayWrapperElement.className = "dayWrapper";
+            dayWrapperElement.className = "day-wrapper";
             
             var dayElement = document.createElement("div");
-            dayElement.className = "day nextMonth";
+            dayElement.className = "day next-month";
             
             dayElement.appendChild(document.createTextNode(day));
             
-            if (day==_lastSelectedDay && nextYear == _lastSelectedMonth && nextYear==_lastSelectedYear) {
+            if (day==_lastSelectedDay && nextMonth == _lastSelectedMonth && nextYear==_lastSelectedYear) {
 				dayElement.classList.add('selected');
         	}
         	
         	if (day==_currentDate.getDate() && nextMonth == _currentDate.getMonth() && nextYear == _currentDate.getFullYear()) {
-		        dayElement.classList.add('currentDay');
+		        dayElement.classList.add('current-day');
 	        }
 	        
             dayElement.addEventListener("click",onclickWrapper(day,nextMonth,nextYear));  
@@ -238,7 +238,7 @@ var JSDatePicker = function(calendarId, month, year) {
      */
     function removeDays() {
 	    // Remove any existing days
-        var days = _calendar.getElementsByClassName('dayWrapper');
+        var days = _calendar.getElementsByClassName('day-wrapper');
         while(days[0]) {
             days[0].parentNode.removeChild(days[0]);
         }

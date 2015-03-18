@@ -11,7 +11,7 @@
 
         <main id="container">
 			<section>
-		        <div id="myDatePicker" class="jsDatePickerBox"></div>
+		        <div id="my-date-picker" class="js-date-picker"></div>
 	    	</section>
         </main>
 
@@ -20,7 +20,7 @@
 			var year = date.getFullYear();
 			var month = date.getMonth();
 			
-		    var datePicker = new JSDatePicker('myDatePicker',month,year);
+		    var datePicker = new JSDatePicker('my-date-picker',month,year);
 		    datePicker.onPickedDate(function(day,month,year) {
 					console.log('Picked day '+day+'/'+month+'/'+year);
 		    });	
