@@ -37,7 +37,7 @@
     width:50%;
 }
 
-.js-date-picker .header-cell.backCell, .js-date-picker .header-cell.next-cell{
+.js-date-picker .header-cell.back-cell, .js-date-picker .header-cell.next-cell{
     /* just to note that they exist to ;-) */
 }
 
