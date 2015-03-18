@@ -15,7 +15,7 @@ Include the neccesary stylesheet and javascript files:
 
 Include a simple div to hold your datepicker:
 ```
-<div id="my-date-picke" class="js-date-picker"></div>
+<div id="my-date-picker" class="js-date-picker"></div>
 ```
 
 Initialise the date picker (e.g. with the current date):
