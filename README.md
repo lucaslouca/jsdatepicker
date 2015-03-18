@@ -15,7 +15,7 @@ Include the neccesary stylesheet and javascript files:
 
 Include a simple div to hold your datepicker:
 ```
-<div id="myDatePicker" class="jsDatePicker"></div>
+<div id="my-date-picker" class="js-date-picker"></div>
 ```
 
 Initialise the date picker (e.g. with the current date):
@@ -25,7 +25,7 @@ Initialise the date picker (e.g. with the current date):
 	var year = date.getFullYear();
 	var month = date.getMonth();
 	
-    var datePicker = new JSDatePicker('myDatePicker',month,year);
+    var datePicker = new JSDatePicker('my-date-picker',month,year);
     datePicker.onPickedDate(function(day,month,year) {
 			console.log('Picked day '+day+'/'+month+'/'+year);
     });	
